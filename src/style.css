@@ -1,0 +1,117 @@
+body {
+  background-image: url('background_image.png');
+  max-width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 560px;
+  min-width: 560px;
+  margin-left: 100px;
+  margin-top: 50px;
+  background-color: rgba(109, 127, 151, 0.5);
+  padding: 5px;
+  color: #85796b;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+}
+
+.grid div {
+  height: 70px;
+  width: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+h3, h1 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin-top: -10px;
+}
+
+.invisible {
+  background-color: white;
+}
+
+.scoreBoard {
+  background-color: cyan;
+  border-radius: 20px;
+  margin-top: 200px;
+  margin-left: 500px;
+  width: auto;
+  height: 120px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #85796b;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+      height: 480px;
+      min-width: 480px;
+      margin-left: 0;
+      margin-top: 20px;
+  }
+
+  .grid div {
+      height: 60px;
+      width: 60px;
+  }
+
+  .scoreBoard {
+      margin-top: 100px;
+      margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+      height: 400px;
+      min-width: 400px;
+  }
+
+  .grid div {
+      height: 50px;
+      width: 50px;
+  }
+
+  .scoreBoard {
+      margin-top: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+      height: 300px;
+      min-width: 300px;
+  }
+
+  .grid div {
+      height: 35px;
+      width: 35px;
+  }
+
+  .scoreBoard {
+      margin-top: 20px;
+      padding: 10px;
+      height: 100px;
+  }
+
+  h3, h1 {
+      font-size: 1.2em;
+  }
+}
